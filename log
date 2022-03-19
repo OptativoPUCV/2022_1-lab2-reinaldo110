@@ -226,3 +226,8 @@ Sat, Mar 19, 2022  7:46:15 PM:
  tests:  3|5
 total_score: 15/70
 f47cf9c
+Sat, Mar 19, 2022  7:47:43 PM: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  0|0
+e44ab4b
