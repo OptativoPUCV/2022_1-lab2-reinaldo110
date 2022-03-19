@@ -12,8 +12,8 @@ struct Node {
 };
 
 struct List {
-    Node * first;
-    Node * last;
+    Node * head;
+    Node * tail;
     Node * current;
 };
 
@@ -30,18 +30,18 @@ Node * createNode(void * data) {
 
 List * createList() {
     List* list = (List*) calloc(1, sizeof(List));
-    list->first = NULL;
+    list->head = NULL;
     list->current = NULL;
-    list->last = NULL;
+    list->tail = NULL;
     return list;
 }
 
-void * firstList(List * list) {
+void * headList(List * list) {
   if (list == NULL) return NULL;
-  if (list->first && list->first->data)
+  if (list->head && list->head->data)
   {
-    list->current = list->first;
-    return list->first->data;
+    list->current = list->head;
+    return list->head->data;
   }
   return NULL;
 }
@@ -50,12 +50,12 @@ void * nextList(List * list) {
   return NULL;
 }
 
-void * lastList(List * list) {
+void * tailList(List * list) {
   if (list == NULL) return NULL;
-  if (list->last && list->last->data)
+  if (list->tail && list->tail->data)
   {
-    list->current = list->last;
-    return list->last->data;
+    list->current = list->tail;
+    return list->tail->data;
   }
   return NULL;
 }
@@ -70,12 +70,12 @@ void pushFront(List * list, void * data) {
 
 void pushBack(List * list, void * data) {
   /*Node* n = createNode(data);
-  if (list->first == NULL)
-    list->first = n;
+  if (list->head == NULL)
+    list->head = n;
   else
-    list->last->next = n;
-  list->last = n;*/
-  list->current = list->last;
+    list->tail->next = n;
+  list->tail = n;*/
+  list->current = list->tail;
   pushCurrent(list,data);
 }
 
@@ -85,12 +85,12 @@ void pushCurrent(List * list, void * data) {
 }
 
 void * popFront(List * list) {
-    list->current = list->first;
+    list->current = list->head;
     return popCurrent(list);
 }
 
 void * popBack(List * list) {
-    list->current = list->last;
+    list->current = list->tail;
     return popCurrent(list);
 }
 
@@ -99,7 +99,7 @@ void * popCurrent(List * list) {
 }
 
 void cleanList(List * list) {
-    while (list->first != NULL) {
+    while (list->head != NULL) {
         popFront(list);
     }
 }

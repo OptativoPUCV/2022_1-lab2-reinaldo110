@@ -167,3 +167,12 @@ test.c:426:9: error: 'List' {aka 'struct List'} has no member named 'tail'
          ^~
 Compilation failed
 a07e5f0
+Sat, Mar 19, 2022  3:52:24 PM: 
+ list.c | 40 ++++++++++++++++++++--------------------
+ 1 file changed, 20 insertions(+), 20 deletions(-)
+C:\Users\reina\AppData\Local\Temp\ccGWcHxp.o:test.c:(.text+0x553): undefined reference to `firstList'
+C:\Users\reina\AppData\Local\Temp\ccGWcHxp.o:test.c:(.text+0x624): undefined reference to `firstList'
+C:\Users\reina\AppData\Local\Temp\ccGWcHxp.o:test.c:(.text+0x7fc): undefined reference to `lastList'
+collect2.exe: error: ld returned 1 exit status
+Compilation failed
+30933a1
