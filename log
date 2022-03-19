@@ -176,3 +176,9 @@ C:\Users\reina\AppData\Local\Temp\ccGWcHxp.o:test.c:(.text+0x7fc): undefined ref
 collect2.exe: error: ld returned 1 exit status
 Compilation failed
 30933a1
+Sat, Mar 19, 2022  3:53:05 PM: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  3|5
+total_score: 15/70
+86ecd6f
