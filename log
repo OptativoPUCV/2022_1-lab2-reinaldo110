@@ -1,0 +1,169 @@
+Sat, Mar 19, 2022  3:51:29 PM: 
+ list.c | 38 ++++++++++++++++++++++++++++++--------
+ 1 file changed, 30 insertions(+), 8 deletions(-)
+test.c: In function 'initialize_exList':
+test.c:56:7: error: 'List' {aka 'struct List'} has no member named 'head'
+      L->head=L->tail=createNode(j);
+       ^~
+test.c:56:15: error: 'List' {aka 'struct List'} has no member named 'tail'
+      L->head=L->tail=createNode(j);
+               ^~
+test.c:58:18: error: 'List' {aka 'struct List'} has no member named 'head'
+      L->current=L->head;
+                  ^~
+test.c:65:11: error: 'List' {aka 'struct List'} has no member named 'tail'
+          L->tail->next=n;
+           ^~
+test.c:66:19: error: 'List' {aka 'struct List'} has no member named 'tail'
+          n->prev=L->tail;
+                   ^~
+test.c:67:11: error: 'List' {aka 'struct List'} has no member named 'tail'
+          L->tail=n;
+           ^~
+test.c: In function 'initialize_emptyList':
+test.c:78:7: error: 'List' {aka 'struct List'} has no member named 'head'
+      L->head=L->tail=NULL;
+       ^~
+test.c:78:15: error: 'List' {aka 'struct List'} has no member named 'tail'
+      L->head=L->tail=NULL;
+               ^~
+test.c: In function 'test_create':
+test.c:89:9: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head != NULL || L->tail !=NULL || L->current!=NULL){
+         ^~
+test.c:89:28: error: 'List' {aka 'struct List'} has no member named 'tail'
+     if(L->head != NULL || L->tail !=NULL || L->current!=NULL){
+                            ^~
+test.c: In function 'test_first_next':
+test.c:115:23: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->current != L->head){
+                       ^~
+test.c:143:23: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->current != L->head->next){
+                       ^~
+test.c:149:19: error: 'List' {aka 'struct List'} has no member named 'tail'
+     L->current = L->tail;
+                   ^~
+test.c: In function 'test_last_prev':
+test.c:188:23: error: 'List' {aka 'struct List'} has no member named 'tail'
+     if(L->current != L->tail){
+                       ^~
+test.c:205:23: error: 'List' {aka 'struct List'} has no member named 'tail'
+     if(L->current != L->tail->prev){
+                       ^~
+test.c:211:19: error: 'List' {aka 'struct List'} has no member named 'head'
+     L->current = L->head;
+                   ^~
+test.c: In function 'test_pushfront':
+test.c:244:9: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head==NULL) {
+         ^~
+test.c:249:9: error: 'List' {aka 'struct List'} has no member named 'tail'
+     if(L->tail==NULL) {
+         ^~
+test.c:254:9: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head != L->tail){
+         ^~
+test.c:254:20: error: 'List' {aka 'struct List'} has no member named 'tail'
+     if(L->head != L->tail){
+                    ^~
+test.c:259:9: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head->data != j){
+         ^~
+test.c:267:16: error: 'List' {aka 'struct List'} has no member named 'head'
+     Node* aux=L->head;
+                ^~
+test.c:273:9: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head->data != j){
+         ^~
+test.c:279:9: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head->next == NULL){
+         ^~
+test.c:284:9: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head->next != aux){
+         ^~
+test.c:285:65: error: 'List' {aka 'struct List'} has no member named 'head'
+         sprintf(msg,"head->next->data=%d (debe ser 0)",*(int*) L->head->next->data);
+                                                                 ^~
+test.c: In function 'test_pushcurrent':
+test.c:303:17: error: 'List' {aka 'struct List'} has no member named 'head'
+     L->current=L->head;
+                 ^~
+test.c:311:9: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head == NULL || L->head->next==NULL){
+         ^~
+test.c:311:28: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head == NULL || L->head->next==NULL){
+                            ^~
+test.c:316:9: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head->next->data != j){
+         ^~
+test.c:322:9: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head->next->prev ==NULL){
+         ^~
+test.c:327:17: error: 'List' {aka 'struct List'} has no member named 'tail'
+     L->current=L->tail;
+                 ^~
+test.c:328:16: error: 'List' {aka 'struct List'} has no member named 'tail'
+     Node* aux=L->tail;
+                ^~
+test.c:335:9: error: 'List' {aka 'struct List'} has no member named 'tail'
+     if(L->tail == NULL || L->tail->data != j){
+         ^~
+test.c:335:28: error: 'List' {aka 'struct List'} has no member named 'tail'
+     if(L->tail == NULL || L->tail->data != j){
+                            ^~
+test.c:340:41: error: 'List' {aka 'struct List'} has no member named 'tail'
+     if(aux->next == NULL || aux->next!=L->tail){
+                                         ^~
+test.c:345:9: error: 'List' {aka 'struct List'} has no member named 'tail'
+     if(L->tail->prev == NULL || L->tail->prev!=aux){
+         ^~
+test.c:345:34: error: 'List' {aka 'struct List'} has no member named 'tail'
+     if(L->tail->prev == NULL || L->tail->prev!=aux){
+                                  ^~
+test.c: In function 'test_popcurrent':
+test.c:362:17: error: 'List' {aka 'struct List'} has no member named 'head'
+     L->current=L->head;
+                 ^~
+test.c:370:9: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head == NULL || *(int*)L->head->data != 2){
+         ^~
+test.c:370:35: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head == NULL || *(int*)L->head->data != 2){
+                                   ^~
+test.c:375:9: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head->prev != NULL){
+         ^~
+test.c:386:17: error: 'List' {aka 'struct List'} has no member named 'head'
+     L->current=L->head->next;
+                 ^~
+test.c:387:16: error: 'List' {aka 'struct List'} has no member named 'head'
+     Node* aux=L->head->next->next;
+                ^~
+test.c:394:9: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head->next == NULL || L->head->next!=aux){
+         ^~
+test.c:394:34: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(L->head->next == NULL || L->head->next!=aux){
+                                  ^~
+test.c:399:22: error: 'List' {aka 'struct List'} has no member named 'head'
+     if(aux->prev != L->head){
+                      ^~
+test.c:410:17: error: 'List' {aka 'struct List'} has no member named 'tail'
+     L->current=L->tail;
+                 ^~
+test.c:411:10: error: 'List' {aka 'struct List'} has no member named 'tail'
+     aux=L->tail->prev;
+          ^~
+test.c:415:10: error: 'List' {aka 'struct List'} has no member named 'tail'
+     aux=L->tail->prev;
+          ^~
+test.c:421:9: error: 'List' {aka 'struct List'} has no member named 'tail'
+     if(L->tail != aux){
+         ^~
+test.c:426:9: error: 'List' {aka 'struct List'} has no member named 'tail'
+     if(L->tail->next != NULL){
+         ^~
+Compilation failed
+a07e5f0
