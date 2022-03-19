@@ -187,3 +187,9 @@ Sat, Mar 19, 2022  6:27:35 PM:
  1 file changed, 3 insertions(+), 1 deletion(-)
  tests:  0|0
 c2ffe48
+Sat, Mar 19, 2022  7:30:41 PM: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  3|5
+total_score: 15/70
+7d109b0
