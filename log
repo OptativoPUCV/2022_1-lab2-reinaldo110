@@ -375,3 +375,9 @@ list.c:71:6: note: declared here
 cc1.exe: all warnings being treated as errors
 Compilation failed
 0fb1288
+Sun, Mar 20, 2022  1:17:20 PM: 
+ list.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+c8a9a6d
