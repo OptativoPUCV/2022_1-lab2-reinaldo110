@@ -399,3 +399,9 @@ Sun, Mar 20, 2022  3:22:05 PM:
  tests:  10|2
 total_score: 45/70
 f898f0b
+Sun, Mar 20, 2022  3:24:45 PM: 
+ list.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+ tests:  11|1
+total_score: 55/70
+e1369b6
