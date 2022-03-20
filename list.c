@@ -47,8 +47,7 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
-  Node *aux = list->current->next;
-  list->current = aux;
+  list->current = NULL;
   if (list->current == NULL || list->current->next == NULL) return NULL;
   return list->current->data;
 }
