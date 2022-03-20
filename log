@@ -327,3 +327,9 @@ Sat, Mar 19, 2022 10:15:37 PM:
  tests:  6|4
 total_score: 25/70
 ec17482
+Sun, Mar 20, 2022  1:13:59 PM: 
+ list.c | 3 +++
+ 1 file changed, 3 insertions(+)
+ tests:  9|3
+total_score: 35/70
+f9d84ea
