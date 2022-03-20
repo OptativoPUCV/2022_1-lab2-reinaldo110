@@ -293,3 +293,9 @@ Sat, Mar 19, 2022 10:00:03 PM:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 ccb6889
+Sat, Mar 19, 2022 10:04:43 PM: 
+ list.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+ tests:  3|5
+total_score: 15/70
+d3f8bc7
