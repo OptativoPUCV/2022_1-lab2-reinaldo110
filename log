@@ -333,3 +333,17 @@ Sun, Mar 20, 2022  1:13:59 PM:
  tests:  9|3
 total_score: 35/70
 f9d84ea
+Sun, Mar 20, 2022  1:16:31 PM: 
+ list.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function 'pushFront':
+list.c:74:14: error: 'return' with a value, in function returning void [-Werror]
+   return list->head;
+          ~~~~^~~~~~
+list.c:71:6: note: declared here
+ void pushFront(List * list, void * data) {
+      ^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c4b14ed
