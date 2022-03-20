@@ -277,3 +277,14 @@ Sat, Mar 19, 2022  9:58:14 PM:
  tests:  3|5
 total_score: 15/70
 d3c06b9
+Sat, Mar 19, 2022  9:59:50 PM: 
+ list.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function 'nextList':
+list.c:51:9: error: unused variable 'aux' [-Werror=unused-variable]
+   Node *aux = list->current->next->data;
+         ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+b4d1767
